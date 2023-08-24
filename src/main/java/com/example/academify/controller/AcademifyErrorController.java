@@ -1,4 +1,4 @@
-package com.example.academify.controller.;
+package com.example.academify.controller;
 
 import com.example.academify.dominio.ErrorJSON;
 import jakarta.servlet.http.HttpServletRequest;

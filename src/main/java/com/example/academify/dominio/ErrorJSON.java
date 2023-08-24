@@ -1,4 +1,4 @@
-package com.example.academify.dominio.;
+package com.example.academify.dominio;
 
 import java.util.Map;
 

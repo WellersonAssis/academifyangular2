@@ -1,4 +1,4 @@
-package com.example.academify.dominio.;
+package com.example.academify.dominio;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -23,6 +23,11 @@ public class Aluno {
 
     @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private Date dataHoraCadastro;
+
+    private Aluno() {
+        this.dataHoraCadastro = new Date();
+
+    }
 
     public long getId() {
         return id;
