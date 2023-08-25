@@ -1,106 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        
+    </header>
+
 <body>
-    <section class="jumbotron text-center">
-    <div class= "col-md-6 text-center order-md-3">
-        <h4 class="mb-3">Endereço do Cliente</h4>
-        <form class="needs-validation" novalidate="">
-            <div class="row">
+    <div class="text-center">
+        <h4 class="mb-3">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Endereço do Cliente</font>
+            </font>
+        </h4>
+        <form class="container">
+            <div class="row justify-content-center">
                 <div class="col-md-6 mb-3">
-                    <label for="primeiroNome">Nome</label>
-                    <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+                    <label for="firstName">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Primeiro nome</font>
+                        </font>
+                    </label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
-                        É obrigatório inserir um nome válido.
+                        Valid first name is required.
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+                    <label for="lastName">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Sobrenome</font>
+                        </font>
+                    </label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
-                        É obrigatório inserir um sobre nome válido.
+                        Valid last name is required.
                     </div>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="nickname">Nickname</label>
+                <label for="username">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nome de usuário</font>
+                    </font>
+                </label>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">@</span>
+                        <span class="input-group-text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">@</font>
+                            </font>
+                        </span>
                     </div>
-                    <input type="text" class="form-control" id="nickname" placeholder="Nickname" required="">
+                    <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required="">
                     <div class="invalid-feedback" style="width: 100%;">
-                        Seu nickname é obrigatório.
+                        Your username is required.
                     </div>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+                <label for="email">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">E-mail </font>
+                    </font><span class="text-muted">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">(opcional)</font>
+                        </font>
+                    </span>
+                </label>
+                <input type="email" class="form-control" id="email" placeholder="você@exemplo.com">
                 <div class="invalid-feedback">
-                    Por favor, insira um endereço de e-mail válido.
+                    Please enter a valid email address for shipping updates.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="endereco">Endereço</label>
-                <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required="">
+                <label for="address">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Endereço</font>
+                    </font>
+                </label>
+                <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required="">
                 <div class="invalid-feedback">
-                    Por favor, insira seu endereço de entrega.
+                    Please enter your shipping address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="endereco2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
-                <input type="text" class="form-control" id="endereco2" placeholder="Apartamento ou casa">
+                <label for="address2">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Endereço 2 </font>
+                    </font><span class="text-muted">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">(opcional)</font>
+                        </font>
+                    </span>
+                </label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suíte">
             </div>
 
             <div class="row">
                 <div class="col-md-5 mb-3">
-                    <label for="pais">País</label>
-                    <select class="custom-select d-block w-100" id="pais" required="">
-                        <option value="">Escolha...</option>
-                        <option>Brasil</option>
+                    <label for="country">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">País</font>
+                        </font>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" required="">
+                        <option value="">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Escolher...</font>
+                            </font>
+                        </option>
+                        <option>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Brasil</font>
+                            </font>
+                        </option>
                     </select>
                     <div class="invalid-feedback">
-                        Por favor, escolha um país válido.
+                        Please select a valid country.
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="estado">Estado</label>
-                    <select class="custom-select d-block w-100" id="estado" required="">
-                        <option value="">Escolha...</option>
-                        <option>Acre</option>
+                    <label for="state">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Estado</font>
+                        </font>
+                    </label>
+                    <select class="custom-select d-block w-100" id="state" required="">
+                        <option value="">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Escolher...</font>
+                            </font>
+                        </option>
+                        <option>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Acre</font>
+                            </font>
+                        </option>
                     </select>
                     <div class="invalid-feedback">
-                        Por favor, insira um estado válido.
+                        Please provide a valid state.
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="cep">CEP</label>
-                    <input type="text" class="form-control" id="cep" placeholder="" required="">
-                    <div class="invalid-feedback">
-                        É obrigatório inserir um CEP.
-                    </div>
-                </div>
+
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar Cliente</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Cadastrar cliente</font>
+                </font>
+            </button>
         </form>
     </div>
-</section>
+
 </body>
+
+</html>
