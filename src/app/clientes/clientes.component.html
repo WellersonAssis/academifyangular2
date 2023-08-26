@@ -1,234 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <body>
+    <div class="bg-image" style="
+    background-image: url('/assets/img/fundo\ mario.jpg');
+    height: 130vh;
+  " class="row flex-lg-row-reverse align-items-center g-5 py-5">
 
-    <div class="text-center">
-        <h4 class="mb-">
-            <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Endereço do Cliente</font>
-            </font>
-        </h4>
-        <form class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 mb-3">
-                    <label for="firstName">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Primeiro nome</font>
-                        </font>
-                    </label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid first name is required.
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="lastName">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Sobrenome</font>
-                        </font>
-                    </label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid last name is required.
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="username">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Nome de usuário</font>
-                    </font>
-                </label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
+        <div class="text-center">
+            <h4 class="mb-">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Endereço do Cliente</font>
+                </font>
+            </h4>
+            <form class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">@</font>
+                                <font style="vertical-align: inherit;">Primeiro nome</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sobrenome</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Nome de usuário</font>
+                        </font>
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">@</font>
+                                </font>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required="">
+                        <div class="invalid-feedback" style="width: 100%;">
+                            Your username is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">E-mail </font>
+                        </font><span class="text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">(opcional)</font>
                             </font>
                         </span>
-                    </div>
-                    <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required="">
-                    <div class="invalid-feedback" style="width: 100%;">
-                        Your username is required.
+                    </label>
+                    <input type="email" class="form-control" id="email" placeholder="você@exemplo.com">
+                    <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
                     </div>
                 </div>
-            </div>
 
-            <div class="mb-3">
-                <label for="email">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">E-mail </font>
-                    </font><span class="text-muted">
+                <div class="mb-3">
+                    <label for="address">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">(opcional)</font>
+                            <font style="vertical-align: inherit;">Endereço</font>
                         </font>
-                    </span>
-                </label>
-                <input type="email" class="form-control" id="email" placeholder="você@exemplo.com">
-                <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    </label>
+                    <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required="">
+                    <div class="invalid-feedback">
+                        Please enter your shipping address.
+                    </div>
                 </div>
-            </div>
 
-            <div class="mb-3">
-                <label for="address">
+                <div class="mb-3">
+                    <label for="address2">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Endereço 2 </font>
+                        </font><span class="text-muted">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">(opcional)</font>
+                            </font>
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suíte">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">País</font>
+                            </font>
+                        </label>
+                        <select class="custom-select d-block w-100" id="country" required="">
+                            <option value="">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Escolher...</font>
+                                </font>
+                            </option>
+                            <option>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Brasil</font>
+                                </font>
+                            </option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Estado</font>
+                            </font>
+                        </label>
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Escolher...</font>
+                                </font>
+                            </option>
+                            <option value="AC">
+                                <font style="vertical-align: inherit;">Acre</font>
+                            </option>
+                            <option value="AL">
+                                <font style="vertical-align: inherit;">Alagoas</font>
+                            </option>
+                            <option value="AP">
+                                <font style="vertical-align: inherit;">Amapá</font>
+                            </option>
+                            <option value="AM">
+                                <font style="vertical-align: inherit;">Amazonas</font>
+                            </option>
+                            <option value="BA">
+                                <font style="vertical-align: inherit;">Bahia</font>
+                            </option>
+                            <option value="CE">
+                                <font style="vertical-align: inherit;">Ceará</font>
+                            </option>
+                            <option value="DF">
+                                <font style="vertical-align: inherit;">Distrito Federal</font>
+                            </option>
+                            <option value="ES">
+                                <font style="vertical-align: inherit;">Espírito Santo</font>
+                            </option>
+                            <option value="GO">
+                                <font style="vertical-align: inherit;">Goiás</font>
+                            </option>
+                            <option value="MA">
+                                <font style="vertical-align: inherit;">Maranhão</font>
+                            </option>
+                            <option value="MT">
+                                <font style="vertical-align: inherit;">Mato Grosso</font>
+                            </option>
+                            <option value="MS">
+                                <font style="vertical-align: inherit;">Mato Grosso do Sul</font>
+                            </option>
+                            <option value="MG">
+                                <font style="vertical-align: inherit;">Minas Gerais</font>
+                            </option>
+                            <option value="PA">
+                                <font style="vertical-align: inherit;">Pará</font>
+                            </option>
+                            <option value="PB">
+                                <font style="vertical-align: inherit;">Paraíba</font>
+                            </option>
+                            <option value="PR">
+                                <font style="vertical-align: inherit;">Paraná</font>
+                            </option>
+                            <option value="PE">
+                                <font style="vertical-align: inherit;">Pernambuco</font>
+                            </option>
+                            <option value="PI">
+                                <font style="vertical-align: inherit;">Piauí</font>
+                            </option>
+                            <option value="RJ">
+                                <font style="vertical-align: inherit;">Rio de Janeiro</font>
+                            </option>
+                            <option value="RN">
+                                <font style="vertical-align: inherit;">Rio Grande do Norte</font>
+                            </option>
+                            <option value="RS">
+                                <font style="vertical-align: inherit;">Rio Grande do Sul</font>
+                            </option>
+                            <option value="RO">
+                                <font style="vertical-align: inherit;">Rondônia</font>
+                            </option>
+                            <option value="RR">
+                                <font style="vertical-align: inherit;">Roraima</font>
+                            </option>
+                            <option value="SC">
+                                <font style="vertical-align: inherit;">Santa Catarina</font>
+                            </option>
+                            <option value="SP">
+                                <font style="vertical-align: inherit;">São Paulo</font>
+                            </option>
+                            <option value="SE">
+                                <font style="vertical-align: inherit;">Sergipe</font>
+                            </option>
+                            <option value="TO">
+                                <font style="vertical-align: inherit;">Tocantins</font>
+                            </option>
+
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Endereço</font>
+                        <font style="vertical-align: inherit;">Cadastrar cliente</font>
                     </font>
-                </label>
-                <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required="">
-                <div class="invalid-feedback">
-                    Please enter your shipping address.
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="address2">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Endereço 2 </font>
-                    </font><span class="text-muted">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">(opcional)</font>
-                        </font>
-                    </span>
-                </label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suíte">
-            </div>
-
-            <div class="row">
-                <div class="col-md-5 mb-3">
-                    <label for="country">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">País</font>
-                        </font>
-                    </label>
-                    <select class="custom-select d-block w-100" id="country" required="">
-                        <option value="">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Escolher...</font>
-                            </font>
-                        </option>
-                        <option>
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Brasil</font>
-                            </font>
-                        </option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid country.
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="state">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Estado</font>
-                        </font>
-                    </label>
-                    <select class="custom-select d-block w-100" id="state" required="">
-                        <option value="">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Escolher...</font>
-                            </font>
-                        </option>
-                        <option value="AC">
-                            <font style="vertical-align: inherit;">Acre</font>
-                        </option>
-                        <option value="AL">
-                            <font style="vertical-align: inherit;">Alagoas</font>
-                        </option>
-                        <option value="AP">
-                            <font style="vertical-align: inherit;">Amapá</font>
-                        </option>
-                        <option value="AM">
-                            <font style="vertical-align: inherit;">Amazonas</font>
-                        </option>
-                        <option value="BA">
-                            <font style="vertical-align: inherit;">Bahia</font>
-                        </option>
-                        <option value="CE">
-                            <font style="vertical-align: inherit;">Ceará</font>
-                        </option>
-                        <option value="DF">
-                            <font style="vertical-align: inherit;">Distrito Federal</font>
-                        </option>
-                        <option value="ES">
-                            <font style="vertical-align: inherit;">Espírito Santo</font>
-                        </option>
-                        <option value="GO">
-                            <font style="vertical-align: inherit;">Goiás</font>
-                        </option>
-                        <option value="MA">
-                            <font style="vertical-align: inherit;">Maranhão</font>
-                        </option>
-                        <option value="MT">
-                            <font style="vertical-align: inherit;">Mato Grosso</font>
-                        </option>
-                        <option value="MS">
-                            <font style="vertical-align: inherit;">Mato Grosso do Sul</font>
-                        </option>
-                        <option value="MG">
-                            <font style="vertical-align: inherit;">Minas Gerais</font>
-                        </option>
-                        <option value="PA">
-                            <font style="vertical-align: inherit;">Pará</font>
-                        </option>
-                        <option value="PB">
-                            <font style="vertical-align: inherit;">Paraíba</font>
-                        </option>
-                        <option value="PR">
-                            <font style="vertical-align: inherit;">Paraná</font>
-                        </option>
-                        <option value="PE">
-                            <font style="vertical-align: inherit;">Pernambuco</font>
-                        </option>
-                        <option value="PI">
-                            <font style="vertical-align: inherit;">Piauí</font>
-                        </option>
-                        <option value="RJ">
-                            <font style="vertical-align: inherit;">Rio de Janeiro</font>
-                        </option>
-                        <option value="RN">
-                            <font style="vertical-align: inherit;">Rio Grande do Norte</font>
-                        </option>
-                        <option value="RS">
-                            <font style="vertical-align: inherit;">Rio Grande do Sul</font>
-                        </option>
-                        <option value="RO">
-                            <font style="vertical-align: inherit;">Rondônia</font>
-                        </option>
-                        <option value="RR">
-                            <font style="vertical-align: inherit;">Roraima</font>
-                        </option>
-                        <option value="SC">
-                            <font style="vertical-align: inherit;">Santa Catarina</font>
-                        </option>
-                        <option value="SP">
-                            <font style="vertical-align: inherit;">São Paulo</font>
-                        </option>
-                        <option value="SE">
-                            <font style="vertical-align: inherit;">Sergipe</font>
-                        </option>
-                        <option value="TO">
-                            <font style="vertical-align: inherit;">Tocantins</font>
-                        </option>
-
-                    </select>
-                    <div class="invalid-feedback">
-                        Please provide a valid state.
-                    </div>
-                </div>
-
-            </div>
-
-            <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Cadastrar cliente</font>
-                </font>
-            </button>
-        </form>
+                </button>
+            </form>
+        </div>
     </div>
 
 </body>
