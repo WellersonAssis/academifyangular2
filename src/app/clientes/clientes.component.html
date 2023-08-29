@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <body>
     <div class="bg-image" style="
     background-image: url('/assets/img/fundo\ mario.jpg');
-    height: 130vh;
-  " class="row flex-lg-row-reverse align-items-center g-5 py-5">
-
-        <div class="text-center">
-            <h4 class="mb-">
+    height: 100%;
+  " class="flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="text-center ajeitar">
+            <h1 class="fw-bold">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Endereço do Cliente</font>
                 </font>
-            </h4>
-            <form class="container">
+            </h1>
+            <form class="container fw-bold">
                 <div class="row justify-content-center">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">
@@ -37,71 +37,80 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="username">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Nome de usuário</font>
-                        </font>
-                    </label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">@</font>
-                                </font>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required="">
-                        <div class="invalid-feedback" style="width: 100%;">
-                            Your username is required.
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-3">
+                        <label for="firstName">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">CPF/CNPJ</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first CPF/CNPJ is required.
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">E-mail </font>
-                        </font><span class="text-muted">
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">(opcional)</font>
+                                <font style="vertical-align: inherit;">E-mail</font>
                             </font>
-                        </span>
-                    </label>
-                    <input type="email" class="form-control" id="email" placeholder="você@exemplo.com">
-                    <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
+                        </label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last e-mail is required.
+                        </div>
                     </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="address">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Endereço</font>
-                        </font>
-                    </label>
-                    <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required="">
-                    <div class="invalid-feedback">
-                        Please enter your shipping address.
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="address2">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Endereço 2 </font>
-                        </font><span class="text-muted">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 mb-3">
+                        <label for="firstName">
                             <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">(opcional)</font>
+                                <font style="vertical-align: inherit;">CEP</font>
                             </font>
-                        </span>
-                    </label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suíte">
-                </div>
-
-                <div class="row">
+                        </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first CEP is required.
+                        </div>
+                    </div>
                     <div class="col-md-5 mb-3">
+                        <label for="lastName">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Bairro</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last Bairro required.
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Rua (Logradouro)</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first Rua (Logradouro) is required.
+                        </div>
+                    </div>
+                    <div class="col-md-1 mb-3">
+                        <label for="lastName">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Numero</font>
+                            </font>
+                        </label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last number is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-3">
                         <label for="country">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">País</font>
@@ -123,7 +132,7 @@
                             Please select a valid country.
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <label for="state">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Estado</font>
@@ -216,16 +225,13 @@
                             <option value="TO">
                                 <font style="vertical-align: inherit;">Tocantins</font>
                             </option>
-
                         </select>
                         <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-
                 </div>
-
-                <hr class="mb-4">
+                <p></p>
                 <button class="btn btn-primary btn-lg btn-block" type="submit">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Cadastrar cliente</font>
